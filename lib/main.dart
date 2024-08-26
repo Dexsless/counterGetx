@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Obx(() => MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
             brightness: theme.isDark.value ? Brightness.dark : Brightness.light,
             appBarTheme: AppBarTheme(
